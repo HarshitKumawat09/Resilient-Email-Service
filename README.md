@@ -51,6 +51,7 @@ npm test
 - **EmailService**: Handles queue, retry, fallback, idempotency, rate limiting, circuit breaker
 
 ## Screenshots
-![Dashboard]("C:\Users\Dell\OneDrive\Pictures\Screenshots\Screenshot 2025-06-06 213058.png")
+![Dashboard](![Screenshot 2025-06-06 213058](https://github.com/user-attachments/assets/a4455178-caa6-490a-b3e9-f93432563e9c)
+
 
 
