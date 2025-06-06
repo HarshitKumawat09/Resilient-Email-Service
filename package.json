@@ -1,0 +1,13 @@
+{
+  "name": "resilient-email-service",
+  "version": "1.0.0",
+  "description": "A resilient email sending service with retry, fallback, idempotency, rate limiting, and circuit breaker in vanilla JS.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node tests/runTests.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

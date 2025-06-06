@@ -1,0 +1,41 @@
+<!-- Main frontend HTML. Will be implemented to match provided screenshots. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resilient Email Service</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <span class="logo">📧</span>
+        <span class="app-title">Resilient Email Service</span>
+      </div>
+      <nav class="sidebar-nav">
+        <ul>
+          <li class="nav-item active" data-page="dashboard">Dashboard</li>
+          <li class="nav-item" data-page="send">Send Email</li>
+          <li class="nav-item" data-page="history">Email History</li>
+          <li class="nav-item" data-page="queue">Queue</li>
+          <li class="nav-item" data-page="monitoring">Monitoring</li>
+          <li class="nav-item" data-page="analytics">Analytics</li>
+          <li class="nav-item" data-page="settings">Settings</li>
+        </ul>
+      </nav>
+    </aside>
+    <main class="main-content">
+      <header class="main-header">
+        <div id="page-title">Dashboard</div>
+        <div class="last-updated" id="last-updated">Last updated: Just now</div>
+      </header>
+      <div id="page-content">
+        <!-- Dynamic content will be rendered here by app.js -->
+      </div>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

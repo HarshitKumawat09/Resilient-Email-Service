@@ -1,0 +1,318 @@
+/* Main CSS. Implements modern UI matching screenshots. */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #fafbfc;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 230px;
+  background: #fff;
+  border-right: 1px solid #ececec;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.sidebar-header {
+  padding: 24px 18px 16px 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 1px solid #ececec;
+}
+.logo {
+  font-size: 22px;
+}
+.app-title {
+  letter-spacing: 0.5px;
+}
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sidebar-nav .nav-item {
+  padding: 16px 24px;
+  cursor: pointer;
+  color: #222;
+  transition: background 0.12s;
+}
+.sidebar-nav .nav-item.active, .sidebar-nav .nav-item:hover {
+  background: #f4f6fa;
+  font-weight: 600;
+  color: #1a73e8;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 36px 12px 36px;
+  background: #fff;
+  border-bottom: 1px solid #ececec;
+}
+#page-title {
+  font-size: 22px;
+  font-weight: 600;
+}
+.last-updated {
+  font-size: 13px;
+  color: #666;
+}
+#page-content {
+  padding: 32px 36px 24px 36px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px 0 #f0f1f5;
+  padding: 28px 32px 22px 32px;
+  margin-bottom: 28px;
+  border: 1px solid #ececec;
+}
+
+.queue-controls {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+/* Remove .queue-controls .button customizations, revert to default .button styling */
+
+
+/* Card containing the queue table */
+.queue-table-card {
+  box-shadow: 0 2px 16px 0 #f0f1f5;
+  border-radius: 14px;
+  padding: 24px 18px 18px 18px;
+  background: #fff;
+  margin-top: 18px;
+}
+
+.table {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+
+.queue-status-bar {
+  width: 100%;
+  height: 8px;
+  background: #f4f6fa;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 12px 0 18px 0;
+}
+.queue-status-bar-inner {
+  height: 100%;
+  background: #1a73e8;
+  border-radius: 6px;
+  transition: width 0.3s;
+}
+
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-bottom: 20px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px 0 #f4f6fa;
+}
+.table th, .table td {
+  padding: 14px 14px;
+  border-bottom: 1px solid #ececec;
+  text-align: left;
+  font-size: 15px;
+}
+.table th {
+  background: #f4f6fa;
+  font-weight: 600;
+  color: #333;
+}
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 2px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  margin-right: 6px;
+  background: #f2f2f2;
+  color: #333;
+}
+.status-badge.sent { background: #e8f5e9; color: #2e7d32; }
+.status-badge.failed { background: #ffebee; color: #c62828; }
+.status-badge.retrying { background: #fff8e1; color: #f9a825; }
+.status-badge.queued { background: #e3f2fd; color: #1565c0; }
+.status-badge.closed { background: #e8f5e9; color: #2e7d32; }
+.status-badge.half-open { background: #fffde7; color: #fbc02d; }
+.status-badge.open { background: #ffebee; color: #c62828; }
+
+.priority-badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: 6px;
+  background: #f4f6fa;
+  color: #333;
+}
+.priority-badge.High { background: #ffebee; color: #c62828; }
+.priority-badge.Medium { background: #fffde7; color: #fbc02d; }
+.priority-badge.Low { background: #e3f2fd; color: #1565c0; }
+
+.button {
+  padding: 10px 22px;
+  width: auto;
+  background: #1a73e8;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.13s;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.button:hover {
+  background: #1666c1;
+}
+.remove-btn {
+  background: none;
+  color: #c62828;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0 8px;
+}
+.remove-btn:hover {
+  color: #a31515;
+}
+
+@media (max-width: 900px) {
+  .card { padding: 14px 5px 10px 5px; }
+  .queue-controls { flex-direction: column; gap: 8px; }
+  .table th, .table td { padding: 8px 5px; font-size: 13px; }
+}
+.card {
+  box-shadow: 0 2px 8px 0 #f2f3f7;
+  padding: 24px 28px 20px 28px;
+  margin-bottom: 24px;
+}
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.card-subtitle {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 18px;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: 6px;
+}
+.status-badge.sent { background: #e8f5e9; color: #2e7d32; }
+.status-badge.failed { background: #ffebee; color: #c62828; }
+.status-badge.retrying { background: #fff8e1; color: #f9a825; }
+.status-badge.queued { background: #e3f2fd; color: #1565c0; }
+.status-badge.closed { background: #e8f5e9; color: #2e7d32; }
+.status-badge.half-open { background: #fffde7; color: #fbc02d; }
+.status-badge.open { background: #ffebee; color: #c62828; }
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background: #fff;
+}
+.table th, .table td {
+  padding: 12px 10px;
+  border-bottom: 1px solid #ececec;
+  text-align: left;
+}
+.table th {
+  background: #f4f6fa;
+  font-weight: 600;
+}
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+.form-label {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  display: block;
+}
+.form-input, .form-textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d2d6dc;
+  border-radius: 6px;
+  font-size: 15px;
+  background: #fafbfc;
+  margin-bottom: 2px;
+  transition: border 0.15s;
+}
+.form-input:focus, .form-textarea:focus {
+  border-color: #1a73e8;
+  outline: none;
+}
+.form-textarea {
+  min-height: 70px;
+  resize: vertical;
+}
+.button {
+  padding: 12px 0;
+  width: 100%;
+  background: #1a73e8;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.13s;
+  margin-top: 6px;
+}
+.button:hover {
+  background: #1666c1;
+}
+
+@media (max-width: 900px) {
+  .container { flex-direction: column; }
+  .sidebar { width: 100%; min-height: unset; border-right: none; border-bottom: 1px solid #ececec; }
+  .main-header, #page-content { padding: 18px 8px 8px 8px; }
+}
