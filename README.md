@@ -76,17 +76,27 @@ Run all unit tests:
 ```bash
 npm test
 ```
-
 ---
 
 ## 📸 Screenshots
 
 Dashboard Preview![Screenshot 2025-06-06 213058](https://github.com/user-attachments/assets/37cbd2b4-5e09-49bc-8e2c-ece15f1a9dcc)
 
+Send Mails![Screenshot 2025-06-06 213116](https://github.com/user-attachments/assets/38a89187-f787-4878-96f5-5d269d418b1b)
+
+Email History![Screenshot 2025-06-06 213138](https://github.com/user-attachments/assets/2f170254-5a2e-425d-9b8c-d1ea64cd9da1)
+
+Email Queue![Screenshot 2025-06-06 213149](https://github.com/user-attachments/assets/2b4d98e4-1945-489e-9820-790da35fd9ce)
+
+System Monitoring![Screenshot 2025-06-06 213201](https://github.com/user-attachments/assets/ea6c97f3-d1dd-4618-afaa-8952cee86a0c)
+
+
+Analytics![Screenshot 2025-06-06 213211](https://github.com/user-attachments/assets/861c9727-f8a4-47ec-b6a8-2960f8ba0369)
+
+
+Settings![Screenshot 2025-06-06 213233](https://github.com/user-attachments/assets/316c6a57-173d-4b13-a5af-fe5392607e35)
 
 ---
-
-
 
 ---
 
