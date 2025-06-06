@@ -81,7 +81,8 @@ npm test
 
 ## 📸 Screenshots
 
-![Dashboard Preview](screenshots/dashboard.png)
+Dashboard Preview![Screenshot 2025-06-06 213058](https://github.com/user-attachments/assets/37cbd2b4-5e09-49bc-8e2c-ece15f1a9dcc)
+
 
 ---
 
