@@ -2,7 +2,7 @@
 
 A robust, modern, and fully-featured email sending platform built with vanilla JavaScript and Node.js. Designed for reliability, transparency, and ease of use, this service implements advanced delivery strategies and a beautiful dashboard UI.
 
----
+-----
 
 ## ✨ Key Features
 
@@ -16,7 +16,7 @@ A robust, modern, and fully-featured email sending platform built with vanilla J
 - **Modern Dashboard**: Clean, responsive UI for monitoring, sending, and managing emails.
 - **Fully Testable**: Includes unit tests for core logic and features.
 
----
+-----
 
 ## 🗂️ Project Structure
 
@@ -33,7 +33,7 @@ EmailService/
 └── README.md          # This file
 ```
 
----
+-----
 
 ## ⚙️ Getting Started
 
@@ -49,7 +49,7 @@ EmailService/
 4. **Open your browser**
    [http://localhost:3000](http://localhost:3000)
 
----
+-----
 
 ## 🖥️ Usage & Dashboard
 
@@ -59,7 +59,7 @@ EmailService/
 - **Settings:** Adjust retry and rate limit configurations directly from the UI.
 - **Logs:** Inspect recent activity and error logs for transparency.
 
----
+-----
 
 ## 🛠️ Architecture Overview
 
@@ -68,7 +68,7 @@ EmailService/
 - **Providers:** Mocked for demo (easy to extend for real providers)
 - **Patterns:** Circuit breaker, retry with backoff, idempotency, queue
 
----
+-----
 
 ## 🧪 Testing
 
@@ -76,7 +76,7 @@ Run all unit tests:
 ```bash
 npm test
 ```
----
+-----
 
 ## 📸 Screenshots
 
@@ -96,8 +96,8 @@ Analytics![Screenshot 2025-06-06 213211](https://github.com/user-attachments/ass
 
 Settings![Screenshot 2025-06-06 213233](https://github.com/user-attachments/assets/316c6a57-173d-4b13-a5af-fe5392607e35)
 
----
+-----
 
----
+-----
 
 > **Built for reliability. Designed for clarity. Ready to extend.**
